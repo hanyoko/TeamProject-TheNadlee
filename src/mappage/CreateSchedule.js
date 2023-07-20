@@ -10,7 +10,7 @@ import RightControlbar from "./RightControlbar";
 import LeftControlbar from "./LeftControlbar";
 import { Skeleton } from "antd";
 
-const google_key = process.env.REACT_APP_GOOGLE_API_KEY;
+
 const containerStyle = {
   width: '100%',
   height: '100vh',
@@ -34,11 +34,9 @@ const CreateSchedule = ({place}) => {
   const center = useMemo(() => ({ lat: place.city_lat, lng: place.city_lng }), []);
 //맵구현
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: google_key,
+    googleMapsApiKey: "AIzaSyDBnr2sMNGCNmpZ0dUI9LAWq6nwZU3-eAM",
     libraries: libs
   });
-
-console.log(isLoaded.googleMapsApiKey)
 
   const[map,setMaps]=useState(/**@type google.maps.Map*/(null)) //google map 상태관리. , @type을 써줘야 panTo 사용가능
   const {places} = useParams()
@@ -49,7 +47,9 @@ console.log(isLoaded.googleMapsApiKey)
   if (!data) return null
 
   const onLoad = (marker,polyline,drawingManager) => {
-    //구글 api가 실행될때 실행할 함수들
+    // console.log("marker: ", marker);
+    // console.log("polyline: ",polyline);
+    // console.log("drawingManager: ", drawingManager);
   };
 
   const infoStyle = {
