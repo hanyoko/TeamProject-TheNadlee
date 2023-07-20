@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 
+const weather_key = process.env.REACT_APP_WEATHER_API_KEY;
+
 const api = {
-  key: "b3514c282b0881d3c62d1738e4d0f678",
+  key: weather_key,
   base: "https://api.openweathermap.org/data/2.5/",
 };
 
