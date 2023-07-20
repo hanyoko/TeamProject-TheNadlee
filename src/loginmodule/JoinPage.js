@@ -33,12 +33,12 @@ const JoinPage = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         if(formData.m_name !== ""&&formData.m_pass !==""&&formData.m_passch !=="" &&formData.m_nickname !==""&&formData.m_email !==""){
-            if(check1.checked&&check2.checked&&check3.checked === true){ 
+            if(check1.checked&&check2.checked&&check3.checked==true){ 
             // console.log("prevent통과")
-                // console.log("빈칸통과") 
-                if(formData.m_pass === formData.m_passch){
+                // console.log("빈칸통과")
+                if(formData.m_pass==formData.m_passch){
                     // console.log("비밀번호들 일치")
-                    if(checkPassword(formData.m_pass) === true){
+                    if(checkPassword(formData.m_pass)==true){
                         // console.log("비밀번호 정규표현식 시작")
                         addMember();
                     }else{
@@ -73,7 +73,7 @@ const JoinPage = () => {
             // alert("조건을 만족하였습니다.")
             addMember();
         }else{
-            alert("비밀번호에는 영대소문자,특수문자,숫자가 1개이상 포함되어야 합니다.")
+            alert("비밀번호에는 영문자,특수문자,숫자가 1개이상 포함되어야 합니다.")
         }
     }
 
@@ -104,7 +104,7 @@ const JoinPage = () => {
                 <div>
                     <label className="label-text" for="signInPwd">비밀번호</label>
                     <div className="uk-form-controls"> 
-                        <input className="uk-input" type="password" id="signInPwd"   name="m_pass"  placeholder="비밀번호(영대소문자, 숫자, 특수문자 포함 8~20자)" maxLength="20" value={formData.m_pass} required="" onChange={onChange} />
+                        <input className="uk-input" type="password" id="signInPwd"   name="m_pass"  placeholder="비밀번호(영문자, 숫자, 특수문자 포함 8~20자)" maxLength="20" value={formData.m_pass} required="" onChange={onChange} />
                     </div>
                 </div>
                 <div>
