@@ -84,7 +84,7 @@ function FindPlace () {
                     <div className='FindPlace_country_detail'>
                         <div className='FindPlace_country_detail_left'>
                             <div className='FindPlace_country_detail_left_img'>
-                                <img src="https://cdn.myro.co.kr/prod/image/city/Vancouver.jpg" alt='밴쿠버'></img>
+                                <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/ef23bf17-6ac2-44a3-bb41-212c3487029b.jpeg" alt='밴쿠버'></img>
                             </div>
                         </div>
                         <div className='FindPlace_country_detail_right'>
