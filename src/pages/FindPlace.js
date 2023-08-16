@@ -13,7 +13,7 @@ function FindPlace () {
                 <div className='FindPlace_country_detail'>
                     <div className='FindPlace_country_detail_left'>
                         <div className='FindPlace_country_detail_left_img'>
-                            <img src="https://www.myro.co.kr/myro_image/city/jeju.jpg" alt="제주도"></img>
+                            <img src="https://cdn.myro.co.kr/prod/image/city/Jeju.jpg" alt="제주도"></img>
                         </div>
                     </div>
                     <div className='FindPlace_country_detail_right'>
@@ -36,7 +36,7 @@ function FindPlace () {
                     <div className='FindPlace_country_detail'>
                         <div className='FindPlace_country_detail_left'>
                             <div className='FindPlace_country_detail_left_img'>
-                                <img src="https://myro.co.kr/myro_image/city/singapore.jpg" alt='싱가포르'></img>
+                                <img src="https://cdn.myro.co.kr/prod/image/city/Singapore.jpg" alt='싱가포르'></img>
                             </div>
                         </div>
                         <div className='FindPlace_country_detail_right'>
@@ -84,7 +84,7 @@ function FindPlace () {
                     <div className='FindPlace_country_detail'>
                         <div className='FindPlace_country_detail_left'>
                             <div className='FindPlace_country_detail_left_img'>
-                                <img src="https://www.myro.co.kr/myro_image/city/vancouver.jpg" alt='밴쿠버'></img>
+                                <img src="https://cdn.myro.co.kr/prod/image/city/Vancouver.jpg" alt='밴쿠버'></img>
                             </div>
                         </div>
                         <div className='FindPlace_country_detail_right'>
